@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b9fcbb7-2e1e-4b57-8567-b7c766772196" name="Changes" comment="edit conftest">
+    <list default="true" id="7b9fcbb7-2e1e-4b57-8567-b7c766772196" name="Changes" comment="edit test cases">
+      <change afterPath="$PROJECT_DIR$/test_data/login_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/searchbar_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/signup_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automation-Test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_check_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_check_products.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_log_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_log_in.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_sign_up.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_sign_up.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/utility.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,46 +34,50 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mohamedtaalat"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mohamedtaalat&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mohamedtaalat/Automation-Test.git",
-    "accountId": "b35714ce-502c-47df-b0a0-1acaa2daa919"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mohamedtaalat/Automation-Test.git&quot;,
+    &quot;accountId&quot;: &quot;b35714ce-502c-47df-b0a0-1acaa2daa919&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="354Kd6rRLHdMNWZFoiBwPyD56QL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.home_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.setup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/PycharmProjects/Test Mens club&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.home_page.executor": "Run",
+    "Python.setup.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/admin/PycharmProjects/Test Mens club",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\PycharmProjects\Test Mens club" />
@@ -100,7 +110,8 @@
       <workItem from="1762431702229" duration="2717000" />
       <workItem from="1762513874944" duration="2826000" />
       <workItem from="1762609976620" duration="442000" />
-      <workItem from="1762612591228" duration="1662000" />
+      <workItem from="1762612591228" duration="2092000" />
+      <workItem from="1762627641508" duration="4770000" />
     </task>
     <task id="LOCAL-00001" summary="edit conftest">
       <option name="closed" value="true" />
@@ -110,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762612880817</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="edit test cases">
+      <option name="closed" value="true" />
+      <created>1762614284802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762614284802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +148,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit conftest" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit conftest" />
+    <MESSAGE value="edit test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit test cases" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Test_Mens_club$test.coverage" NAME="test Coverage Results" MODIFIED="1762366621583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />

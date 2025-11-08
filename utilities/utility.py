@@ -10,3 +10,6 @@ class Utilities:
 
     def check_price_of_items(self,list_of_price):
        pass
+
+    def take_screenshot(self,driver,path):
+        driver.save_screenshot(path)

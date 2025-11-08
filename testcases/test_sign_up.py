@@ -1,25 +1,18 @@
 import time
+import unittest
 import pytest
 from pages.signup_page import SignUpPage
-
+from ddt import ddt, file_data
+from utilities.utility import Utilities
 
 @pytest.mark.usefixtures("driver")
-class TestSignUp:
-    def test_sign_up_with_valid_email(self):
+@ddt
+class TestSignUp(unittest.TestCase):
+    @file_data("../test_data/signup_data.json")
+    def test_sign_up(self,name,email,screenPath):
         signup_page = SignUpPage(self.driver)
-        signup_page.sign_up("Mohamed", "test@test")
-        #driver.save_screenshot(".//screen shots/signup/sign_up_wrong.png")
-        time.sleep(3)
-
-    def test_sign_up_with_invalid_email(self):
-        signup_page = SignUpPage(self.driver)
-        signup_page.sign_up("Mohamed", "test@test")
-        time.sleep(3)
-        #driver.save_screenshot(".//screen shots/signup/sign_up_correct.png")
-        time.sleep(3)
-
-    def test_sign_up_with_empty_fields(self):
-        signup_page = SignUpPage(self.driver)
-        signup_page.sign_up("", "")
-       # driver.save_screenshot(".//screen shots/signup/sign_up_empty.png")
+        signup_page.sign_up(name, email)
+        utl = Utilities()
+        utl.take_screenshot(self.driver,".//screen shots/signup/sign_up_{screenPath}.png")
+        #driver.save_screenshot(".//screen shots/signup/sign_up_{screenPath}.png")
         time.sleep(3)

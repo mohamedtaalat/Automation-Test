@@ -1,0 +1,27 @@
+{
+  "Test1": {
+    "email": "test@test",
+    "password": "1245678",
+    "screenPath": "valid email and password"
+  },
+  "Test2": {
+    "email": "tet@test",
+    "password": "1245678",
+    "screenPath": "in valid email and valid password"
+  },
+  "Test3": {
+    "email": "test@test",
+    "password": "00000000",
+    "screenPath": "valid email and invalid password"
+  },
+  "Test4": {
+    "email": "tet@test",
+    "password": "00000000",
+    "screenPath": "invalid email and invalid password"
+  },
+  "Test5": {
+    "email": "",
+    "password": "",
+    "screenPath": "empty fields"
+  }
+}

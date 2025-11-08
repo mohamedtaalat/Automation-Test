@@ -48,7 +48,8 @@ class ProductPage(base_init.Base):
         return self.get_price_of_items()
 
     def get_price_of_items(self):
-        return self.wait_until_elements_visible(By.TAG_NAME,"h2").text
+        elements=self.wait_until_elements_visible(By.TAG_NAME,"h2")
+        return [el.text for el in elements]
 
     def check_specific_product(self):
         home_page = HomePage(self.driver)

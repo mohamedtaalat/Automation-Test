@@ -14,5 +14,5 @@ def driver(request):
     request.cls.driver = driver
     driver.get("https://automationexercise.com")
     driver.maximize_window()
-    yield
+    yield driver
     driver.quit()

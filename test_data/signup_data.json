@@ -1,0 +1,17 @@
+{
+  "Test1": {
+    "name": "mohamed",
+    "email": "test@test",
+    "screenPath": "valid email"
+  },
+  "Test2": {
+    "name": "mohamed",
+    "email": "tet@test",
+    "screenPath": "invalid email"
+  },
+  "Test3": {
+    "name": "",
+    "email": "",
+    "screenPath": "empty fields"
+  }
+}

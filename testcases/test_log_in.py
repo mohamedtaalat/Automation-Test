@@ -1,35 +1,20 @@
 import time
+import unittest
 import pytest
 from pages.login_page import LoginPage
+from ddt import ddt,  file_data
 
+from utilities.utility import Utilities
+
+
+@ddt
 @pytest.mark.usefixtures("driver")
-class TestLogIn:
-    def test_log_in_valid_email_password(self):
+class TestLogIn(unittest.TestCase):
+    @file_data("../test_data/login_data.json")
+    def test_log_in(self,email,password,screenPath):
         login_page = LoginPage(self.driver)
-        login_page.login("test@test","12341234")
-       # driver.save_screenshot(".//screen shots/login/login valid email and password")
-        time.sleep(3)
-
-    def test_log_in_invalid_email_password(self):
-        login_page = LoginPage(self.driver)
-        login_page.login("test@test", "12341234")
-        # driver.save_screenshot(".//screen shots/login/login invalid email and password")
-        time.sleep(3)
-
-    def test_log_in_invalid_password(self):
-        login_page = LoginPage(self.driver)
-        login_page.login("test@test", "12341234")
-        # driver.save_screenshot(".//screen shots/login/login valid email and invalid password")
-        time.sleep(3)
-
-    def test_log_in_invalid_email(self):
-        login_page = LoginPage(self.driver)
-        login_page.login("test@test", "12341234")
-        # driver.save_screenshot(".//screen shots/login/login invalid email and valid password")
-        time.sleep(3)
-
-    def test_log_in_empty_fields(self):
-        login_page = LoginPage(self.driver)
-        login_page.login("", "")
-        # driver.save_screenshot(".//screen shots/login/login empty fields")
+        login_page.login(email, password)
+        utl = Utilities()
+        utl.take_screenshot(self.driver, ".//screen shots/login/login{screenPath}.png")
+        #driver.save_screenshot(".//screen shots/login/login{screenPath}.png")
         time.sleep(3)

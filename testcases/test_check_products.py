@@ -1,23 +1,20 @@
 import time
+import unittest
+from ddt import ddt, file_data
 import pytest
 from pages.products_page import ProductPage
 from utilities.utility import Utilities
 
 @pytest.mark.usefixtures("driver")
-class TestProduct:
-    def test_check_products_with_valid_item(self):
+@ddt
+class TestProduct(unittest.TestCase):
+    @file_data("../test_data/searchbar_data.json")
+    def test_check_search_bar(self, item, screenPath):
         product_page = ProductPage(self.driver)
-        product_page.search_item("Polo")
-        time.sleep(3)
-
-    def test_check_products_with_invalid_item(self):
-        product_page = ProductPage(self.driver)
-        product_page.search_item("shorma")
-        time.sleep(3)
-
-    def test_check_products_with_empty_feild(self):
-        product_page = ProductPage(self.driver)
-        product_page.search_item("")
+        product_page.search_item(item)
+        utl = Utilities()
+        utl.take_screenshot(self.driver, ".//screen shots/searchbar/test searchbar with{screenPath}.png")
+        #driver.save_screenshot(t".//screen shots/searchbar/test searchbar with{screenPath}.png")
         time.sleep(3)
 
     def test_check_every_item_in_category(self):

@@ -1,0 +1,14 @@
+{
+  "Test1": {
+    "item": "Polo",
+    "screenPath": "valid item"
+  },
+  "Test2": {
+    "item": "shorma",
+    "screenPath": "invalid item"
+  },
+  "Test3": {
+    "item": "",
+    "screenPath": "empty fields"
+  }
+}
