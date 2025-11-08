@@ -21,8 +21,13 @@ jobs:
           pip install selenium 
           pip install pytest
           
-
+    - name: Install Google Chrome
+      run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          
     - name: Run tests with pytest
       run: |
+          python -m pip install webdriver-manager
           pytest -vs
       
