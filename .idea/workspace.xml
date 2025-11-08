@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b9fcbb7-2e1e-4b57-8567-b7c766772196" name="Changes" comment="">
+    <list default="true" id="7b9fcbb7-2e1e-4b57-8567-b7c766772196" name="Changes" comment="edit conftest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation-Test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_check_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_check_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_log_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_log_in.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_sign_up.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_sign_up.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mohamedtaalat"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mohamedtaalat/Automation-Test.git",
+    "accountId": "b35714ce-502c-47df-b0a0-1acaa2daa919"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -83,7 +100,17 @@
       <workItem from="1762431702229" duration="2717000" />
       <workItem from="1762513874944" duration="2826000" />
       <workItem from="1762609976620" duration="442000" />
+      <workItem from="1762612591228" duration="1662000" />
     </task>
+    <task id="LOCAL-00001" summary="edit conftest">
+      <option name="closed" value="true" />
+      <created>1762612880817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762612880817</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +126,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edit conftest" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit conftest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Test_Mens_club$test.coverage" NAME="test Coverage Results" MODIFIED="1762366621583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
