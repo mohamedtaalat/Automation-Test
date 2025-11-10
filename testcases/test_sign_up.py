@@ -13,6 +13,6 @@ class TestSignUp(unittest.TestCase):
         signup_page = SignUpPage(self.driver)
         signup_page.sign_up(name, email)
         utl = Utilities()
-        utl.take_screenshot(self.driver,".//screen shots/signup/sign_up_{screenPath}.png")
-        #driver.save_screenshot(".//screen shots/signup/sign_up_{screenPath}.png")
+        utl.take_screenshot(self.driver,f"../screenshots/signup/sign_up_{screenPath}.png")
+
         time.sleep(3)

@@ -1,5 +1,4 @@
 import time
-
 from base import base_init
 from selenium.webdriver.common.by import By
 from pages.home_page import HomePage

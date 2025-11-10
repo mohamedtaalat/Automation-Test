@@ -15,6 +15,6 @@ class TestLogIn(unittest.TestCase):
         login_page = LoginPage(self.driver)
         login_page.login(email, password)
         utl = Utilities()
-        utl.take_screenshot(self.driver, ".//screen shots/login/login{screenPath}.png")
-        #driver.save_screenshot(".//screen shots/login/login{screenPath}.png")
+        utl.take_screenshot(self.driver, f"../screenshots/login/login with {screenPath}.png")
+
         time.sleep(3)

@@ -22,6 +22,7 @@ jobs:
           pip install pytest
           pip install ddt
           
+          
     - name: Install Google Chrome
       run: |
           sudo apt-get update

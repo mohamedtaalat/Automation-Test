@@ -13,8 +13,8 @@ class TestProduct(unittest.TestCase):
         product_page = ProductPage(self.driver)
         product_page.search_item(item)
         utl = Utilities()
-        utl.take_screenshot(self.driver, ".//screen shots/searchbar/test searchbar with{screenPath}.png")
-        #driver.save_screenshot(t".//screen shots/searchbar/test searchbar with{screenPath}.png")
+        utl.take_screenshot(self.driver, f"../screenshots/searchbar/test searchbar with{screenPath}.png")
+
         time.sleep(3)
 
     def test_check_every_item_in_category(self):
