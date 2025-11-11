@@ -25,8 +25,10 @@ class ProductPage(base_init.Base):
     def check_every_item_in_category(self):
         home_page = HomePage(self.driver)
         home_page.click_product()
-        self.driver.execute_script("window.scrollBy(0, 300);")
+        self.scroll(0,400)
         self.click_on_women_in_category()
+        self.click_on_women_in_category()
+        self.click_on_men_in_category()
         self.click_on_men_in_category()
         self.click_on_kids_in_category()
 
@@ -41,7 +43,7 @@ class ProductPage(base_init.Base):
 
     def check_price_of_items(self):
         home_page = HomePage(self.driver)
-        self.driver.execute_script("window.scrollBy(0, 800);")
+        self.scroll(0,800)
         home_page.click_product()
         print(self.get_price_of_items())
         return self.get_price_of_items()
@@ -52,6 +54,6 @@ class ProductPage(base_init.Base):
 
     def check_specific_product(self):
         home_page = HomePage(self.driver)
-        self.driver.execute_script("window.scrollBy(0, 800);")
+        self.scroll(0,800)
         home_page.click_product()
         self.wait_until_click(By.LINK_TEXT,"View Product").click()

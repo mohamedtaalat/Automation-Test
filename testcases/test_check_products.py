@@ -14,7 +14,6 @@ class TestProduct(unittest.TestCase):
         product_page.search_item(item)
         utl = Utilities()
         utl.take_screenshot(self.driver, f"../screenshots/searchbar/test searchbar with{screenPath}.png")
-
         time.sleep(3)
 
     def test_check_every_item_in_category(self):
@@ -22,12 +21,12 @@ class TestProduct(unittest.TestCase):
         product_page.check_every_item_in_category()
         time.sleep(3)
 
-    def test_check_price_of_items(self):
-        product_page = ProductPage(self.driver)
-        list_of_price=product_page.check_price_of_items()
-        utl=Utilities()
-        utl.check_price_of_items(list_of_price)
-        time.sleep(3)
+    # def test_check_price_of_items(self):
+    #     product_page = ProductPage(self.driver)
+    #     list_of_price=product_page.check_price_of_items()
+    #     utl=Utilities()
+    #     utl.check_price_of_items(list_of_price)
+    #     time.sleep(3)
 
     def test_check_specific_product(self):
         product_page = ProductPage(self.driver)

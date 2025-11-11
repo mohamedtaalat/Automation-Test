@@ -1,2 +1,3 @@
 # Automation-Test
-In this repositry i will share my automation code for web testing and some manual test cases and test plan and create ci/cd
+In this repository I will share my automation code for web testing and some manual test cases and test plan and create ci/cd
+I will share also some api testing with post man

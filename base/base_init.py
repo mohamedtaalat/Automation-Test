@@ -16,3 +16,5 @@ class Base:
     def wait_until_elements_visible(self,type,locator):
         return self.wait.until(EC.visibility_of_all_elements_located((type,locator)))
 
+    def scroll(self,x,y):
+        self.driver.execute_script(f"window.scrollBy({x}, {y});")
