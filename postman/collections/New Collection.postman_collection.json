@@ -1,0 +1,144 @@
+{
+  "info": {
+    "_postman_id": "0d515e1d-83cf-4aac-96c7-85d094996a75",
+    "name": "API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get methods",
+      "item": [
+        {
+          "name": "Get all products list",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/productsList",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "productsList"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get all brands list",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/brandsList",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "brandsList"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get user by email",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/getUserDetailByEmail?emai=test@test",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "getUserDetailByEmail"
+              ],
+              "query": [
+                {
+                  "key": "emai",
+                  "value": "test@test",
+                  "type": "text",
+                  "uuid": "3be9c698-07da-415e-baf0-b2f31391c323"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Post methods",
+      "item": [
+        {
+          "name": "Search product",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/searchProduct?search_product=Polo",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "searchProduct"
+              ],
+              "query": [
+                {
+                  "key": "search_product",
+                  "value": "Polo"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Post product list",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/productsList",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "productsList"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
