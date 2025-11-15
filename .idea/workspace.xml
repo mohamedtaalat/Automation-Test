@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b9fcbb7-2e1e-4b57-8567-b7c766772196" name="Changes" comment="add some functions to home page and edit README.md and add api testing with post man">
+    <list default="true" id="7b9fcbb7-2e1e-4b57-8567-b7c766772196" name="Changes" comment="add files to api testing on postman">
+      <change afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/add_item_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_testing_links_in_postman.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api_testing_links_in_postman.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_cart.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,7 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python tests.Python tests in test_cart.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cart_page.executor&quot;: &quot;Run&quot;,
     &quot;Python.home_page.executor&quot;: &quot;Run&quot;,
     &quot;Python.setup.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
@@ -59,6 +64,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/PycharmProjects/Test Mens club&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -112,6 +118,9 @@
       <workItem from="1762970165802" duration="1167000" />
       <workItem from="1763137098911" duration="167000" />
       <workItem from="1763137594075" duration="21000" />
+      <workItem from="1763145039531" duration="1306000" />
+      <workItem from="1763150374537" duration="6789000" />
+      <workItem from="1763230326519" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="edit conftest">
       <option name="closed" value="true" />
@@ -153,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762897119284</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add files to api testing on postman">
+      <option name="closed" value="true" />
+      <created>1763145103339</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763145103339</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,11 +193,13 @@
     <MESSAGE value="use ddt to remove duplicated" />
     <MESSAGE value="add log for utility and add some reports and add file requirments.txt" />
     <MESSAGE value="add some functions to home page and edit README.md and add api testing with post man" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some functions to home page and edit README.md and add api testing with post man" />
+    <MESSAGE value="add files to api testing on postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files to api testing on postman" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Test_Mens_club$test.coverage" NAME="test Coverage Results" MODIFIED="1762366621583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
     <SUITE FILE_PATH="coverage/AutomationExercise$home_page.coverage" NAME="home_page Coverage Results" MODIFIED="1762370250175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
+    <SUITE FILE_PATH="coverage/AutomationExercise$cart_page.coverage" NAME="cart_page Coverage Results" MODIFIED="1763152499633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
     <SUITE FILE_PATH="coverage/AutomationExercise$setup.coverage" NAME="setup Coverage Results" MODIFIED="1762369786129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/AutomationExercise$.coverage" NAME=" Coverage Results" MODIFIED="1762896501580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

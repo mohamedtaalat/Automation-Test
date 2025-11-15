@@ -13,11 +13,7 @@ class HomePage(base_init.Base):
         self.wait_until_click(By.XPATH,"//a[@href='/products']").click()
 
     def click_cart(self):
-        self.wait_until_click(By.XPATH,"//a[@href='/cart']").click()
+        self.wait_until_click(By.XPATH,"/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]").click()
 
     def click_contact_us(self):
         self.wait_until_click(By.XPATH,"//a[normalize-space()='Contact us']").click()
-
-    def click_add_to_cart(self):
-        ActionChains(self.driver).move_to_element(self.wait_until_elements_visible(By.XPATH,"//div[@class='features_items']//div[2]//div[1]//div[1]//div[2]")).perform()
-        self.wait_until_click(By.XPATH,"//div[@class='features_items']//div[2]//div[1]//div[1]//div[2]//div[1]//a[1]").click()

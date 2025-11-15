@@ -1,4 +1,4 @@
-import time
+from selenium.webdriver import ActionChains
 from base import base_init
 from selenium.webdriver.common.by import By
 from pages.home_page import HomePage
@@ -57,3 +57,19 @@ class ProductPage(base_init.Base):
         self.scroll(0,800)
         home_page.click_product()
         self.wait_until_click(By.LINK_TEXT,"View Product").click()
+
+    def add_item_to_cart_then_ok(self,item,button):
+        self.add_item_to_cart(item,button)
+        self.wait_until_click(By.XPATH,"//button[@class='btn btn-success close-modal btn-block']").click()
+
+    def add_item_to_cart_then_view_cart(self,item,button):
+        self.add_item_to_cart(item,button)
+        self.wait_until_click(By.XPATH, "//u[normalize-space()='View Cart']").click()
+
+    def add_item_to_cart(self,item,button):
+        home_page = HomePage(self.driver)
+        home_page.click_product()
+        self.scroll(0, 800)
+        element = self.wait_until_visible(By.XPATH,item)
+        ActionChains(self.driver).move_to_element(element).perform()
+        self.wait_until_click(By.XPATH, button).click()

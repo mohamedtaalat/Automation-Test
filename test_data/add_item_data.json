@@ -1,0 +1,6 @@
+{
+  "Test1": {
+    "item": "//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[1]//div[2]",
+    "button": "//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[1]//div[2]//div[1]//a[1]"
+  }
+}
